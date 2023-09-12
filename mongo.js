@@ -1,6 +1,6 @@
 const { MongoClient } = require('mongodb')
 
-const password = '12345'
+const password = ''
 
 const uri = `mongodb+srv://piotrpustul:${password}@mern-app.easrui5.mongodb.net/products_test?retryWrites=true&w=majority`
 
