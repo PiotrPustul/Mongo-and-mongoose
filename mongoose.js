@@ -2,10 +2,12 @@ const mongoose = require('mongoose')
 
 const Product = require('./models/productSchema')
 
+const password = '12345'
+
+const uri = `mongodb+srv://piotrpustul:${password}@mern-app.easrui5.mongodb.net/products_test?retryWrites=true&w=majority`
+
 mongoose
-  .connect(
-    'mongodb+srv://piotrpustul:12345@mern-app.easrui5.mongodb.net/products_test?retryWrites=true&w=majority'
-  )
+  .connect(uri)
   .then(() => {
     console.log('Connected to the DB')
   })
